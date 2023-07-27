@@ -1,0 +1,16 @@
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39,24,126);
+background: linear-gradient(180deg, rgba(39,24,126,1) 0%, rgba(117,139,253,1) 35%, rgba(174,184,254,1) 100%);
+}
+
+.map{
+    padding-left: 20px;
+    width: 200px;
+    max-width:350px;
+    height:auto;
+}
+
