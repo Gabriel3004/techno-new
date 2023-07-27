@@ -1,26 +1,15 @@
 import { useState, useEffect } from 'react';
 // import { createClient } from 'contentful';
 import './Content.css'
-impo
-
-
-const client = createClient({
-    space: 't77jo4vbj5hx',
-    accessToken: 'mvXKzLLkWaHePYxesESQ0slhkub8f51WYoTW8e24bQ4',
-  });
-
+import { response } from 'express';
 
 function Contenful () {
     const [entries, setEntries] = useState([]);
 
     useEffect(() => {
-        client
-          .getEntries()
-          .then((response) =>
-            //   console.log(response)
-            setEntries(response.items)
-          )
-          .catch(console.error);
+      fetch('http://localhost:3000/route_clients')
+      .then( response => response.json())
+      .then(result => setEntries(result))
       }, []);
 
     return (
