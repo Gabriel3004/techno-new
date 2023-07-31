@@ -26,10 +26,11 @@ function Contenful () {
 
   {entries &&
   entries.map((entries)=> (
-    <div className='container'>
+    <div className='container'
+    key={crypto.randomUUID}>
     <h3>{entries.articlename}</h3>
     <img className='my-img'
-    src={entries.image} alt={entries.image} />
+    src={entries.image} alt={entries.image.articlename}  />
     <p className='description'>{entries.articledescription}</p>
             <p className='price'>{entries.articleprice}</p>
             <button className='button'>Buy</button>

@@ -4,7 +4,7 @@ import Contenful from "./component/Contentful";
 import  Header  from "./component/Header";
 import  MyFooter  from "./component/footer";
 import './App.css';
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 function App() {
 
